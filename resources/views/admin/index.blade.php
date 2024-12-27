@@ -2,6 +2,7 @@
 @section('title', 'Falstore')
 @section('content')
 
+<body class="body">
     <div id="wrapper">
         <div id="page" class="">
             <div class="layout-wrap">
@@ -782,5 +783,5 @@
             jQuery(window).on("resize", function () { });
         })(jQuery);
     </script>
-
+</body>
 @endsection

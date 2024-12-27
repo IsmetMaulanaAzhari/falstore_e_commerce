@@ -21,6 +21,7 @@ Route::middleware('auth:sanctum')->group(function () {
 Route::view('/shop', 'shop')->name('shop');
 Route::view('/about', 'about')->name('about');
 Route::view('/contact', 'contact')->name('contact');
+Route::view('/Product', 'details')->name('pdetail');
 Route::view('/cart', 'cart.index')->name('cart');
 Route::view('/cart/checkout', 'cart.checkout')->name('checkout');
 Route::view('/cart/checkout/confirm', 'cart.confirm')->name('confirm');
@@ -33,7 +34,7 @@ Route::view('/account/wishlist', 'account.wishlist')->name('awish');
 
 // admin
 Route::view('/admin', 'admin.index')->name('admin');
-Route::view('/admin/product', 'admin.product')->name('product');
+Route::view('/admin/product', 'admin.products')->name('product');
 Route::view('/admin/product/add', 'admin.add.product')->name('addproduct');
 Route::view('/admin/brands', 'admin.brands')->name('brands');
 Route::view('/admin/brands/add', 'admin.add.brand')->name('addbrand');

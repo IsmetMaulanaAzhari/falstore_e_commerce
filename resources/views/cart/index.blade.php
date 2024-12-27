@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Falstore | About')
+@section('title', 'Falstore | Cart')
 
 @section('content')
   @include('components.header')
