@@ -22,7 +22,6 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::view('/admin/product', 'admin.products')->name('product');
     Route::view('/admin/product/add', 'admin.add.product')->name('addproduct');
     Route::view('/admin/brands', 'admin.brands')->name('brands');
-    Route::view('/admin/brands/add', 'admin.add.brand')->name('addbrand');
     Route::view('/admin/categories', 'admin.categories')->name('categories');
     Route::view('/admin/categories/add', 'admin.add.category')->name('addcategory');
     Route::view('/admin/orders', 'admin.order.index')->name('orders');
@@ -33,6 +32,9 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::view('/admin/coupon', 'admin.coupons')->name('coupon');
     Route::view('/admin/user', 'admin.users')->name('user');
     Route::view('/admin/setting', 'admin.settings')->name('setting');
+    Route::get('/admin/brand/add',[AdminController::class,'add_brand'])->name('admin.brand.add');
+    Route::post('/admin/brand/store',[AdminController::class,'add_brand_store'])->name('admin.brand.store');
+    Route::view('/admin/brand/product', 'admin.products')->name('admin.brand.products');
 });
 
 // Route::middleware(['auth', 'role:user'])->group(function () {
