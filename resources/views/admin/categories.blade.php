@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title', 'Falstore')
+@section('title', 'Falstore | Category')
 @section('content')
 
 <body class="body">
@@ -8,16 +8,16 @@
             <div class="layout-wrap">
 
                 <!-- <div id="preload" class="preload-container">
-    <div class="preloading">
-        <span></span>
-    </div>
-</div> -->
+                    <div class="preloading">
+                     <span></span>
+                    </div>
+                </div> -->
 
                 <div class="section-menu-left">
                     <div class="box-logo">
-                        <a href="index.html" id="site-logo-inner">
+                        <a href="{{route('admin')}}" id="site-logo-inner">
                             <img class="" id="logo_header" alt="" src="{{asset('images/admin/logo/logo.png')}}"
-                                data-light="images/logo/logo.png" data-dark="images/logo/logo.png">
+                                data-light="{{ asset('images/admin/logo/logo.png') }}" data-dark="{{ asset('images/admin/logo/logo.png') }}">
                         </a>
                         <div class="button-show-hide">
                             <i class="icon-menu-left"></i>
@@ -28,7 +28,7 @@
                             <div class="center-heading">Main Home</div>
                             <ul class="menu-list">
                                 <li class="menu-item">
-                                    <a href="index.html" class="">
+                                    <a href="{{route('admin')}}" class="">
                                         <div class="icon"><i class="icon-grid"></i></div>
                                         <div class="text">Dashboard</div>
                                     </a>
@@ -147,8 +147,8 @@
                             <div class="header-left">
                                 <a href="index-2.html">
                                     <img class="" id="logo_header_mobile" alt="" src="{{asset('images/admin/logo/logo.png')}}"
-                                        data-light="images/logo/logo.png" data-dark="images/logo/logo.png"
-                                        data-width="154px" data-height="52px" data-retina="images/logo/logo.png">
+                                        data-light="{{ asset('images/admin/logo/logo.png') }}" data-dark="{{ asset('images/admin/logo/logo.png') }}"
+                                        data-width="154px" data-height="52px" data-retina="{{ asset('images/admin/logo/logo.png') }}">
                                 </a>
                                 <div class="button-show-hide">
                                     <i class="icon-menu-left"></i>
@@ -428,7 +428,7 @@
                                     <h3>Categories</h3>
                                     <ul class="breadcrumbs flex items-center flex-wrap justify-start gap10">
                                         <li>
-                                            <a href="index.html">
+                                            <a href="{{route('admin')}}">
                                                 <div class="text-tiny">Dashboard</div>
                                             </a>
                                         </li>
@@ -520,4 +520,4 @@
     </div>
 
 </body>
-
+@endsection
