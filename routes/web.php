@@ -46,9 +46,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::view('/account/address/change', 'account.details')->name('change');
     Route::view('/account/address/form', 'account.address-form')->name('new');
     Route::view('/account/wishlist', 'account.wishlist')->name('awish');
-
     Route::view('/product/details', 'details')->name('products.details');
-
     Route::view('/shop', 'shop')->name('shop');
     Route::view('/about', 'about')->name('about');
     Route::view('/contact', 'contact')->name('contact');
