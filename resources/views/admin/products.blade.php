@@ -12,9 +12,7 @@
         <span></span>
     </div>
 </div> -->
-
 @include('components.admin.sidemenu')
-
                 <div class="section-content-right">
 
                     <div class="header-dashboard">
@@ -303,7 +301,7 @@
                                     <h3>All Products</h3>
                                     <ul class="breadcrumbs flex items-center flex-wrap justify-start gap10">
                                         <li>
-                                            <a href="index.html">
+                                            <a href="{{route('admin')}}">
                                                 <div class="text-tiny">Dashboard</div>
                                             </a>
                                         </li>

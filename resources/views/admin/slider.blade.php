@@ -13,7 +13,6 @@
           <span></span>
       </div>
   </div> -->
-
           @include('components.admin.sidemenu')
 
           <div class="section-content-right">
@@ -156,6 +155,7 @@
                           </ul>
                         </li>
                       </ul>
+
                     </div>
                   </form>
 

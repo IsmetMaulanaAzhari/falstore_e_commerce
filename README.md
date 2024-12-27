@@ -79,9 +79,10 @@ Laravel E-Commerce adalah sebuah aplikasi web e-commerce berbasis framework Lara
 
 ## Struktur Proyek
 - **app/**: Berisi file backend aplikasi Laravel.
-- **resources/**: Berisi file frontend (blade templates, CSS, JS).
+- **resources/**: Berisi file frontend (blade templates).
 - **routes/**: Berisi definisi rute aplikasi.
 - **database/**: Berisi migrasi dan seeder database.
+- **public/**: Berisi file static (CSS, JS, gambar).
 
 ## Kontributor
 - Hafidz Ramadhan Ghiffari ([ramadhafidz](https://github.com/ramadhafidz))

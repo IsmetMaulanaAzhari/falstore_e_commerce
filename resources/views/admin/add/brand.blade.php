@@ -7,7 +7,6 @@
     <div id="wrapper">
       <div id="page" class="">
         <div class="layout-wrap">
-
           <div id="preload" class="preload-container">
             <div class="preloading">
               <span></span>

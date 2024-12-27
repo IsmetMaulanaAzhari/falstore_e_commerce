@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Falstore | Wishlist')
+@section('title', 'Falstore')
 @section('content')
   <svg class="d-none">
     <symbol id="icon_nav" viewBox="0 0 25 18">
